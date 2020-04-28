@@ -7,11 +7,11 @@ This is a Brainlife wrapper App for `dipy_mask` workflow. This single wrapper is
 
 ## Running the App
 
-### On Brainlife.io
+#### 1. On Brainlife.io
 
 You can see a list of [Dipy Apps currently regsitered on Brainlife](https://brainlife.io/apps#dipy). Find the App that you'd like to run and click "Execute" tab to specify dataset that you'd like to run the App on.
 
-### Running Locally (on your machine)
+#### 2. On  your machine (Running Locally)
 
 To run this command, you can simply type:
 
