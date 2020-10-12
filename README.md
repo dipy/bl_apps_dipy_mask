@@ -28,7 +28,7 @@ We kindly ask that you cite the articles in the following [link](https://dipy.or
 
 ### On Brainlife.io
 
-You can see a list of [DIPY Tracking Apps currently registered on Brainlife](https://brainlife.io/apps#dipy). Find the App that you'd like to run and click "Execute".
+You can see a list of [DIPY Apps currently registered on Brainlife](https://brainlife.io/apps#dipy). Find the App that you'd like to run and click "Execute".
 
 ### Running Locally (on  your machine)
 
