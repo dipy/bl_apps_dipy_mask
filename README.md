@@ -3,6 +3,48 @@
 
 # Dipy Mask
 
+<!-- brainlife-app:begin (generated from the App manifest; edit the manifest, not this block) -->
+
+> **Creates a binary mask by thresholding the FA image of a tensor dataset between lower and upper bounds with DIPY 1.1.1 dipy_mask.**
+
+Wraps the DIPY 1.1.1 dipy_mask workflow: voxels of the FA image whose values lie between lb and ub become 1, all others 0. Use it to build a white matter or brain mask from FA, for example as a seed or stopping mask for tractography. Only the FA file of the tensor input is used.
+
+| | |
+|---|---|
+| 📥 **Inputs** | `neuro/tensor` |
+| 📤 **Outputs** | `neuro/mask` |
+| 🐳 **Container** | `brainlife/dipy:1.1.1` |
+| ⚙️ **Resources** | 8 CPUs |
+| 🔗 **Run it** | [doi.org/10.25663/bl.app.65](https://doi.org/10.25663/bl.app.65) |
+
+#### 📥 Inputs
+
+| Input | Datatype | Required | Description |
+|---|---|---|---|
+| `tensor` | `neuro/tensor` | yes | Tensor dataset; only its FA image is thresholded. |
+
+#### 📤 Outputs
+
+| Output | Datatype | Description |
+|---|---|---|
+| `output` | `neuro/mask` | Binary mask (mask.nii.gz) in the space of the FA image. |
+
+<details>
+<summary><b>⚙️ Parameters</b> (2)</summary>
+
+| Parameter | Type | Default | Description |
+|---|---|---|---|
+| `lb` | number | `0.2` | Lower bound value. |
+| `ub` | string | `Inf` | Upper bound value |
+
+</details>
+
+📚 **References used by this App:**
+- Garyfallidis E, et al. Dipy, a library for the analysis of diffusion MRI data. Front Neuroinform 8:8 (2014). [doi:10.3389/fninf.2014.00008](https://doi.org/10.3389/fninf.2014.00008)
+- Avesani P, et al. The open diffusion data derivatives, brain data upcycling via integrated publishing of derivatives and reproducible open cloud services. Sci Data 6:69 (2019). [doi:10.1038/s41597-019-0073-y](https://doi.org/10.1038/s41597-019-0073-y)
+
+<!-- brainlife-app:end -->
+
 The App generates a mask from reference (like FA/GFA) of your diffusion-weighted magnetic resonance imaging data.
 
 ### Authors
